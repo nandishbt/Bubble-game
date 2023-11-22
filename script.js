@@ -1,4 +1,4 @@
-var timerr = 10;
+var timerr = 60;
 var score = 0;
 var rn = 0;
 function bubblemake(){
@@ -22,8 +22,13 @@ function timerint(){
         }
         else{
             clearInterval(t);
-            document.querySelector("#pbtm").innerHTML = `<h1 style = "color : red">GAME OVER<br><br>Total score = ${score} </h1>`
-                                                              
+            var a = Number(document.querySelector("#target").textContent)
+            if(score >= a){
+                document.querySelector("#pbtm").innerHTML = `<h1 style = "color : green">YOU WON</h1>` 
+            }
+            else{
+            document.querySelector("#pbtm").innerHTML = `<h1 style = "color : red">YOU LOST</h1>`
+            }                                                  
             
         }
     },1000)
@@ -36,7 +41,7 @@ function hit(){
 
 }
 function scoreincrease(){
-    score+=10;
+    score+=1;
     document.querySelector("#score").textContent=score;
 
 }
