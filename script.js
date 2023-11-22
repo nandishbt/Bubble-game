@@ -1,4 +1,4 @@
-var timerr = 60;
+var timerr = 10;
 var score = 0;
 var rn = 0;
 function bubblemake(){
@@ -22,7 +22,9 @@ function timerint(){
         }
         else{
             clearInterval(t);
-            document.querySelector("#pbtm").innerHTML = `<h1>GAME OVER</h1>`
+            document.querySelector("#pbtm").innerHTML = `<h1 style = "color : red">GAME OVER<br><br>Total score = ${score} </h1>`
+                                                              
+            
         }
     },1000)
 }
