@@ -51,6 +51,30 @@ font-weight: 1000;
 
 
 }
+
+#again{
+    height: 30px;
+    width: 110px;
+    margin-left: 150px;
+    background-color: aquamarine;
+    padding:2px 2px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    
+    
+    
+
+font-family: cursive;   
+gap: 10px; 
+color: blue;
+font-weight: 1000;
+border-radius: 10%;
+
+
+
+
+}
 .innerbox{
     height: 20px;
     width: 35px;
@@ -92,6 +116,10 @@ font-weight: 1000;
 
 }
 .bubble:hover{
+    cursor: pointer;
+    color: white
+}
+#again:hover{
     cursor: pointer;
     color: white
 }

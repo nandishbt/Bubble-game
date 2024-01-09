@@ -28,6 +28,8 @@ function timerint(){
             }
             else{
             document.querySelector("#pbtm").innerHTML = `<h1 style = "color : red">YOU LOST</h1>`
+
+            
             }                                                  
             
         }
@@ -55,4 +57,17 @@ document.querySelector("#pbtm").addEventListener("click",function(dt){
         hit();
         bubblemake();
     }
+})
+
+document.querySelector("#again").addEventListener('click',function(){
+    
+    bubblemake();
+    document.querySelector("#Timer").textContent = 60;
+    document.querySelector("#score").textContent=0;
+    score = 0;
+    timerr = 60;
+
+    
+
+
 })
